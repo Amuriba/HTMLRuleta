@@ -34,7 +34,7 @@
         }
 
         .header {
-            background: linear-gradient(135deg, #0088cc, #0099dd);
+            background: linear-gradient(135deg, #0078BF, #0099dd);
             color: white;
             padding: 25px;
             text-align: center;
@@ -46,7 +46,7 @@
 
         .wheel-section {
             padding: 30px;
-            background: linear-gradient(180deg, #768dff 0%, #b397fd 100%);
+            background: linear-gradient(180deg, #ffffff 0%, #fff 100%);
         }
 
         .wheel-container {
@@ -404,16 +404,16 @@
         });
 
         const prizes = [
-            { text: 'Cuchara', color: '#0099dd' },
-            { text: 'Gracias\npor participar', color: '#00a651' },
-            { text: 'Regalía\nde producto', color: '#0099dd' },
-            { text: 'Cuchara', color: '#00a651' },
-            { text: 'Gracias\npor participar', color: '#00a651' },
-            { text: 'Tabla', color: '#0099dd' },
-            { text: 'Cuchara', color: '#00a651' },
-            { text: 'Gracias\npor participar', color: '#0099dd' },
-            { text: 'Tabla', color: '#00a651' },
-            { text: 'Gracias\npor participar', color: '#0099dd' }
+            { text: 'Premio', color: '#0078BF' },
+            { text: 'Gracias\npor participar', color: '#64A70B' },
+            { text: 'Premio', color: '#0078BF' },
+            { text: 'Premio', color: '#64A70B' },
+            { text: 'Gracias\npor participar', color: '#0078BF' },
+            { text: 'Premio', color: '#64A70B' },
+            { text: 'Premio', color: '#0078BF' },
+            { text: 'Gracias\npor participar', color: '#64A70B' },
+            { text: 'Premio', color: '#0078BF' },
+            { text: 'Gracias\npor participar', color: '#64A70B' }
         ];
 
         let currentRotation = 0;
@@ -510,7 +510,7 @@
                     const winner = prizes[winningIndex];
                     // Reproducir sonido de victoria
                     playWinSound();
-                    resultDiv.innerHTML = `<div class="result-text">🎉 ¡Felicidades!<br>Ganaste: ${winner.text.replace('\n', ' ')} 🎉</div>`;
+                    resultDiv.innerHTML = `<div class="result-text">🎉 ${winner.text.replace('\n', ' ')} 🎉</div>`;
                     isSpinning = false;
                     spinBtn.disabled = false;
                     spinBtn.textContent = 'Presiona el botón para girar';
